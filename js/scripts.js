@@ -1,9 +1,57 @@
 $(document).ready(function(){
-  //INITIAL ANIMATION
-  $(".cg-bg_welcome").fadeIn("slow");
-  $('.cg-bg_welcome').css(
-        {'display': "flex"});
-  // TRIGGER MOBILE MENU
+  if($(".slb-main_nav_ul").hasClass("slb-main_nav_ul_mobile"))
+      { 
+        $(".slb-social_menu_ul").fadeIn("fast");
+      }
+  else{
+        $(".slb-social_menu_ul").fadeOut("fast");
+      }
+  // TRIGGER MENU
+  $(".slb-main_nav_li_title").click(function(){
+    if($(".slb-main_nav_ul").hasClass("slb-main_nav_ul_mobile"))
+        { 
+          $(".slb-main_nav_ul").removeClass("slb-main_nav_ul_mobile");
+          $(".slb-social_menu_ul").fadeOut("fast");
+        }
+    else{
+          $(".slb-main_nav_ul").addClass("slb-main_nav_ul_mobile");
+          $(".slb-social_menu_ul").fadeIn("fast");
+        }
+  });
+  //MENU LINKS
+  $(".slb-main_nav_li").click(function(){
+    $('.slb-main_nav_li').removeClass('slb-main_nav_li_active');
+    $(this).addClass('slb-main_nav_li_active');
+    $(".slb-main_nav_ul").addClass("slb-main_nav_ul_mobile");
+    $(".slb-social_menu_ul").fadeIn("fast");
+  });
+  // MOVE PAGE
+  $("#slb-index").click(function(){
+    $(".slb-wrapper_sections").animate
+      ({
+        "marginLeft":'-50%'
+      }, 700);
+    });
+  $("#slb-ourteam").click(function(){
+    $(".slb-wrapper_sections").animate
+      ({
+        "marginLeft":'-150%'
+      }, 700);
+    });
+  $("#slb-services").click(function(){
+    $(".slb-wrapper_sections").animate
+      ({
+        "marginLeft":'-250%'
+      }, 700);
+    });
+  $("#slb-contact").click(function(){
+    $(".slb-wrapper_sections").animate
+      ({
+        "marginLeft":'-350%'
+      }, 700);
+    });
+
+  ////
   $(".cg-nav_mobile").click(function(){
     $(".cg-menu_ul").animate
       ({
