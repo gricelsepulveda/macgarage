@@ -4,7 +4,7 @@ html lang="es"
     meta charset="utf-8"
     title Mcgarage
     meta name="description" content="Soluciones de calidad, soporte experto."/
-    meta name="keywords" content="mac, apple, servicio tecnico, repuestos, soporte"/
+    meta name="keywords" content="mac, apple, servicio tecnico, repuestos, soporte, Servicio técnico Mac, Reparación, Repuestos"/
     meta name="author" content="By Lyrics"/
     meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/
     /! BOOTSTRAP
@@ -17,9 +17,6 @@ html lang="es"
     link rel="stylesheet" href="css/animate.css"
     /! FONTAWESOME
     link rel="stylesheet" href="css/font-awesome.css"
-    /! BANNER VIDEO
-    link rel="stylesheet" href="css/unslider.css"
-    link rel="stylesheet" href="css/unslider-dots.css"
     /! CUSTOM DESKTOP STYLES
     link rel="stylesheet" href="css/styles.css"
     /! FAVICON
@@ -53,14 +50,75 @@ html lang="es"
     script src="js/picturefill.min.js"
     /! CUSTOM SCRIPTS
     script src="js/scripts.js"
-    /! BANNER VIDEO
-    script src="js/unslider.js"
   body
+    /! POP UPS 
+    .cg-bg_popup
+    /! POP UP LOGIN
+    .cg-wrapper_popup.cg-slb-faq.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span F.A.Q. Preguntas frecuentes:
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          ul.slb-list_faq_ul
+            li.slb-list_faq_li.pregunta_1
+              span.consulta id="_1" 1. ¿En qué consiste el diagnóstico?
+              p
+                | Muchas veces los problemas de tus equipos no son evidentes. Nuestros técnicos deben revisarlo y/o desarmarlo para poder determinar la causa del problema. Te enviaremos una Ficha de Diagnóstico en un plazo máximo de 3 horas y te anexaremos un presupuesto. 
+            li.slb-list_faq_li.pregunta_2
+              span.consulta id="_2" 2. Acepté el presupuesto para arreglar mis equipos. ¿Qué hago ahora?
+              p
+                | Primero comunícate con nosotros. Llámanos al 
+                a href="tel:+56225023258" 225023258, 
+                | escríbenos por Whatsapp al 
+                a href="tel:+56959171124" +56959171124 
+                | o a  
+                a href="mailto:contacto@macgarage.cl" contacto@macgarage.cl 
+                | o a nuestro formulario en línea y te enviaremos una Orden de Trabajo. A contar de este punto nuestros técnicos solucionarán el problema de tus equipos y te los entregaremos en 48 horas.
+            li.slb-list_faq_li.pregunta_3
+              span.consulta id="_3" 3. La reparación de mi equipo requiere de pieza o repuestps nuevos. ¿Están incluidas en el presupuesto o debo comprarlas por separado?
+              p
+                | Sí, está todo incluido en el presupuesto, así que no necesitas comprarlas por separado. Todas las Fichas de Diagnóstico vienen con un presupuesto anexo donde están incluidas todas las piezas o repuestos que sean necesarios para resolver el problema de tus equipos. Trabajamos con piezas y repuestos alternativos de alta calidad, que son garantizados por MAC. En caso que quieras comprarlos por tu cuenta, no podremos garantizarte resolver el problema de tu equipo en 48 horas, y el plazo de entrega te lo informaremos una vez que nos hagas llegar las piezas o repuestos.
+            li.slb-list_faq_li.pregunta_4
+              span.consulta id="_4" 4. No puedo ir a dejar o retirar mi equipo del taller. ¿Tienen servicio a domicilio?
+              p
+                | Sabemos que el tiempo es valioso. Si no puedes ir a nuestro taller, te ofrecemos nuestro servicio de PICK UP y DELIVERY. Vamos a buscar tus equipos y luego te los vamos a dejar donde necesites dentro de Santiago.
+            li.slb-list_faq_li.pregunta_5
+              span.consulta id="_4" 5. Quiero optar por el servicio de pick up y delivery, ¿Qué costo tiene?
+              p
+                | Es gratuito dentro de Santiago y es exclusivo para clientes que hayan aceptado el presupuesto enviado.
+            li.slb-list_faq_li.pregunta_6
+              span.consulta id="_4" 6. Entregué mi equipo para diagnóstico con servicio de pick up y delivery pero no acepté el presupuesto. ¿Tiene algún costo?
+              p
+                | Sí, tiene un costo fijo de $5.990 dentro de Santiago, incluido el PICK UP y DELIVERY. Este servicio es gratuito únicamente para clientes que hayan aceptado el presupuesto.
+            li.slb-list_faq_li.pregunta_7
+              span.consulta id="_4" 7. Opté por servicio de pick up y delivery. ¿Los tiempos de traslado están incluidos en las 48 horas?
+              p
+                | Sí. Si optaste por el servicio de PICK UP y DELIVERY recibirás tus equipos dentro de las 48 horas garantizadas. Recuerda que las 48 horas corren desde el momento en que aceptas el presupuesto, no desde el PICK UP.
+            li.slb-list_faq_li.pregunta_8
+              span.consulta id="_4" 8. Mis equipos fueron entregados fuera del plaza estipulado. ¿Qué ocurre en caso que no se cumpla el plazo de 48 horas?
+              p
+                | Si por algún motivo recibes tus equipos fuera de las 48 horas garantizadas, te lo informaremos previamente, y te compensaremos con un 50% de descuento en tu presupuesto final.
+            li.slb-list_faq_li.pregunta_9
+              span.consulta id="_4" 9. Mi equipo necesita un upgrade. ¿Puedo solamente comprar las piezas o repuestos que necesito?
+              p
+                | Sí, puedes revisarlos y comprarlos en línea a través de nuestro E-SHOP 
+                a href="http://www.lyrics.cl/tienda." lyrics.cl/tienda
+            li.slb-list_faq_li.pregunta_10
+              span.consulta id="_4" 10. Tengo una urgencia con mis equipos y estoy fuera del horario hábil. ¿Qué puedo hacer?
+              p
+                | Por el momento no atendemos urgencias, pero estamos trabajando para iniciar pronto una marcha blanca para nuestro SERVICIO 24/7.
+          .cg-wrap_btns
+            button.slb-section_index_btn.cg-close_pop Cerrar
     nav.slb-main_nav
       /! EXTRA INFO
       aside.slb-main_nav_aside
         p.slb-main_nav_p
-          a href="http://www.lyrics" Una empresa de LYRICS Música &#38; Tecnología.
+          a href="http://www.lyrics.cl" Una empresa de LYRICS Música &#38; Tecnología.
+        h4.slb_main_nav_h4
+          a href="http://www.lyrics.cl/tienda"
+            i.fa.fa-shopping-cart aria-hidden="true"
+            | Ir a la tienda
         span.slb-main_nav_span
           i.slbicon_guarantee
           | Solución completa en 72hrs.
@@ -71,8 +129,9 @@ html lang="es"
         .slb-wrapper_main_nav_article
           /! PHONE
           article.slb-main_nav_article
-            button.slb-main_nav_btn_button
-              i.slbicon_telephone
+            a href="tel:+56225023258"
+              button.slb-main_nav_btn_button
+                i.slbicon_telephone
             .slb-wrapper_nav_info
               span.slb-main_nav_btn_span Llámanos ahora:
               p.slb_main_nav_btn_span_p
@@ -81,16 +140,18 @@ html lang="es"
                 a href="tel:+56959171124" +56959171124
           /! LOCATION
           article.slb-main_nav_article
-            button.slb-main_nav_btn_button
-              i.slbicons_location
+            a href="https://www.google.cl/maps/place/Nancy+570,+%C3%91u%C3%B1oa,+Regi%C3%B3n+Metropolitana/@-33.4558492,-70.6266195,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5624d9abdfd:0x139f4b510c06d75f!8m2!3d-33.4558492!4d-70.6244255"
+              button.slb-main_nav_btn_button
+                i.slbicons_location
             .slb-wrapper_nav_info
               span.slb-main_nav_btn_span Encuéntranos en:
               p.slb_main_nav_btn_span_p
                 a href="https://www.google.cl/maps/place/Nancy+570,+%C3%91u%C3%B1oa,+Regi%C3%B3n+Metropolitana/@-33.4558492,-70.6266195,17z/data=!3m1!4b1!4m5!3m4!1s0x9662c5624d9abdfd:0x139f4b510c06d75f!8m2!3d-33.4558492!4d-70.6244255" Nancy #570, Ñuñoa.
           /! EMAIL
           article.slb-main_nav_article
-            button.slb-main_nav_btn_button
-              i.slbicon_email
+            a href="mailto:contacto@macgarage.cl"
+              button.slb-main_nav_btn_button
+                i.slbicon_email
             .slb-wrapper_nav_info
               span.slb-main_nav_btn_span Email:
               p.slb_main_nav_btn_span_p
@@ -109,11 +170,11 @@ html lang="es"
         li.slb-main_nav_li
           a.slb-main_nav_li_a id="slb-contact" Contáctanos
         li.slb-main_nav_li
-          a.slb-main_nav_li_a id="slb-faq" F.A.Q.
+          a.slb-main_nav_li_a.cg-pop_trigger id="slb-faq" F.A.Q.
       /! MENU SOCIAL
       ul.slb-social_menu_ul
         li.slb-social_menu_li
-          a.slb-social_menu_a href="#"
+          a.slb-social_menu_a href="http://www.facebook.com/lyricsmusictech"
             i.slbicon_facebook
             span.slb-social_menu_span Facebook
         li.slb-social_menu_li
@@ -131,12 +192,11 @@ html lang="es"
         article.slb-section_index_article
           h1.slb-section_index_h1 Soluciones de calidad
           h2.slb-section_index_h2 Soporte Experto
-          p.slb-section_index_p Característica 1, característica 2 y más...
-          a href="#"
-            button.slb-section_index_btn Comienza tu reparación ahora.
+          p.slb-section_index_p Servicio técnico Mac. Reparación. Repuestos.
+          button.slb-section_index_btn id="slb-contact_2" Comienza tu reparación ahora.
       /! OURTEAM
       section.slb-section_ourteam
-        header.slb_section_ourteam_banner
+        header.slb-section_ourteam_banner
           img src="img/macbookpro.png"
         article.slb-section_ourteam_article
           h1.slb-section_ourteam_h1 MacGarage
@@ -144,32 +204,56 @@ html lang="es"
           p.slb-section_ourteam_p Contamos con soluciones de UPGRADE varias para tu MAC, ya sea un desktop (MacPro, IMac y MacMini) o laptop (MacBook Pro, MacBook y MacAir)
       /! SERVICES
       section.slb-section_services
+        header.slb-section_services_banner
+          h1.slb-section_services_h1 
+            | Nuestros
+            span.slb-section_services_h1_span servicios
+        .slb-section_services_article_subsection
+          .slb-section_services_article_wrapper
+            .slb-section_services_article_content
+              .slb-section_services_article
+                figure.slb-services_figure
+                  img src="img/img_search.svg"
+                h3.slb-services_h3 Diagnóstico
+                p.slb-services_p
+                  | Chequeamos y realizamos una evaluación entregando un diagnóstico express de costo cero dentro del mismo día en que nos entregas tus equipos
+              .slb-section_services_article
+                figure.slb-services_figure
+                  img src="img/img_tools.svg"
+                h3.slb-services_h3 Solución
+                p.slb-services_p
+                  | Sabemos lo importante que son tus equipos para tu trabajo o empresa. Garantizamos solucionar el problema en un plazo máximo de 72 horas.
+              .slb-section_services_article
+                figure.slb-services_figure
+                  img src="img/img_ambulance.svg"
+                h3.slb-services_h3 Pickup & Delivery
+                p.slb-services_p
+                  | Entendemos que tu tiempo es valioso. Contamos con el servicio de pick up y delivery para nuestros clientes que no posean los medios ni el tiempo para venir a nuestro taller.
+              .slb-section_services_article
+                figure.slb-services_figure
+                  img src="img/img_upload.svg"
+                h3.slb-services_h3 Upgrade
+                p.slb-services_p
+                  | Alcanza el máximo rendimiento de tus equipos. Potencia tus equipos mediante técnicas de modificación de componentes. Tenemos diferentes piezas y repuestos para ampliar las características de hardware de tus equipos.
+              .slb-section_services_article
+                figure.slb-services_figure
+                  img src="img/img_chip.svg"
+                h3.slb-services_h3 Accesorios y repuestos
+                p.slb-services_p
+                  | La calidad y durabilidad de los componentes son indispensables para un profesional. Contamos con una amplia gama de accesorios, piezas, periféricos y repuestos alternativos de alta calidad garantizados por MAC.
       /! CONTACT
       section.slb-section_contact
-script src="js/noframework.waypoints.min.js"
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-
-
-
-
-
-
-
-
+        .slb-wrapper_article_section_contact
+          article.slb-section_contact
+            h1.slb-section_contact_h1 Contacto
+            h2.slb-section_contact_2 Aquí comienzan las soluciones
+            p.slb-section_contact_p
+              | Todos hemos pasado algún susto con nuestro MAC. 
+              br
+              br
+              | No te preocupes, si tu equipo está con problemas nosotros nos hacemos cargo. Solucionamos el problema y tendrás de vuelta tu equipo en un máximo de 48 horas. Empieza tu atención a través de nuestros números de contacto o, si tienes dudas, escríbenos acá.
+            form.slb-section_contact_form name='formulario' id='formulario' method='post' action='enviar.php' target='_self' enctype="multipart/form-data"
+              input type="text" placeholder="Tu nombre"
+              input type="text" placeholder="E-mail"
+              textarea placeholder="Tu mensaje..."
+              button.slb-section_index_btn type="submit" Enviar
