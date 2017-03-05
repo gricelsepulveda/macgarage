@@ -53,7 +53,22 @@ html lang="es"
   body
     /! POP UPS 
     .cg-bg_popup
-    /! POP UP LOGIN
+    /! POP UP 72 HRS
+    .cg-wrapper_popup.cg-slb-garantia_hrs.cg-popup
+      #cg-popup
+        nav.cg-nav_pop
+          span ¿Qué es la garantía 72hrs?:
+          i.fa.fa-times.cg-close_pop aria-hidden="true"
+        .cg-flex_pop
+          img.slb-pop_img_tec src="img/img_technician.svg"
+          p.slb-pop_p
+            | Es nuestra promesa. Sabemos lo esencial que son tus equipos para tu trabajo o para tu empresa. Nos hemos propuesto que tengas tus equipos de regreso y reparados en un máximo de 72 horas hábiles. 
+            br
+            br
+            | Es importante que tengas claro que las 72 horas de garantía corren desde el momento en que aceptas el presupuesto. Si por alguna razón tus equipos son entregados fuera del plazo de 72 horas hábiles, te lo haremos saber previamente y te compensaremos con un 50% de descuento en tu presupuesto final.
+          .cg-wrap_btns
+            button.slb-section_index_btn.cg-close_pop Cerrar
+    /! POP UP FAQ
     .cg-wrapper_popup.cg-slb-faq.cg-popup
       #cg-popup
         nav.cg-nav_pop
@@ -74,11 +89,11 @@ html lang="es"
                 a href="tel:+56959171124" +56959171124 
                 | o a  
                 a href="mailto:contacto@macgarage.cl" contacto@macgarage.cl 
-                | o a nuestro formulario en línea y te enviaremos una Orden de Trabajo. A contar de este punto nuestros técnicos solucionarán el problema de tus equipos y te los entregaremos en 48 horas.
+                | o a nuestro formulario en línea y te enviaremos una Orden de Trabajo. A contar de este punto nuestros técnicos solucionarán el problema de tus equipos y te los entregaremos en 72 horas.
             li.slb-list_faq_li.pregunta_3
-              span.consulta id="_3" 3. La reparación de mi equipo requiere de pieza o repuestps nuevos. ¿Están incluidas en el presupuesto o debo comprarlas por separado?
+              span.consulta id="_3" 3. La reparación de mi equipo requiere de pieza o repuestos nuevos. ¿Están incluidas en el presupuesto o debo comprarlas por separado?
               p
-                | Sí, está todo incluido en el presupuesto, así que no necesitas comprarlas por separado. Todas las Fichas de Diagnóstico vienen con un presupuesto anexo donde están incluidas todas las piezas o repuestos que sean necesarios para resolver el problema de tus equipos. Trabajamos con piezas y repuestos alternativos de alta calidad, que son garantizados por MAC. En caso que quieras comprarlos por tu cuenta, no podremos garantizarte resolver el problema de tu equipo en 48 horas, y el plazo de entrega te lo informaremos una vez que nos hagas llegar las piezas o repuestos.
+                | Sí, está todo incluido en el presupuesto, así que no necesitas comprarlas por separado. Todas las Fichas de Diagnóstico vienen con un presupuesto anexo donde están incluidas todas las piezas o repuestos que sean necesarios para resolver el problema de tus equipos. Trabajamos con piezas y repuestos alternativos de alta calidad, que son garantizados por MAC. En caso que quieras comprarlos por tu cuenta, no podremos garantizarte resolver el problema de tu equipo en 72 horas, y el plazo de entrega te lo informaremos una vez que nos hagas llegar las piezas o repuestos.
             li.slb-list_faq_li.pregunta_4
               span.consulta id="_4" 4. No puedo ir a dejar o retirar mi equipo del taller. ¿Tienen servicio a domicilio?
               p
@@ -92,13 +107,13 @@ html lang="es"
               p
                 | Sí, tiene un costo fijo de $5.990 dentro de Santiago, incluido el PICK UP y DELIVERY. Este servicio es gratuito únicamente para clientes que hayan aceptado el presupuesto.
             li.slb-list_faq_li.pregunta_7
-              span.consulta id="_4" 7. Opté por servicio de pick up y delivery. ¿Los tiempos de traslado están incluidos en las 48 horas?
+              span.consulta id="_4" 7. Opté por servicio de pick up y delivery. ¿Los tiempos de traslado están incluidos en las 72 horas?
               p
-                | Sí. Si optaste por el servicio de PICK UP y DELIVERY recibirás tus equipos dentro de las 48 horas garantizadas. Recuerda que las 48 horas corren desde el momento en que aceptas el presupuesto, no desde el PICK UP.
+                | Sí. Si optaste por el servicio de PICK UP y DELIVERY recibirás tus equipos dentro de las 72 horas garantizadas. Recuerda que las 72 horas corren desde el momento en que aceptas el presupuesto, no desde el PICK UP.
             li.slb-list_faq_li.pregunta_8
-              span.consulta id="_4" 8. Mis equipos fueron entregados fuera del plaza estipulado. ¿Qué ocurre en caso que no se cumpla el plazo de 48 horas?
+              span.consulta id="_4" 8. Mis equipos fueron entregados fuera del plazo estipulado y ¿Qué ocurre en caso que no se cumpla el plazo de 72 horas?
               p
-                | Si por algún motivo recibes tus equipos fuera de las 48 horas garantizadas, te lo informaremos previamente, y te compensaremos con un 50% de descuento en tu presupuesto final.
+                | Si por algún motivo recibes tus equipos fuera de las 72 horas hábiles garantizadas, te lo informaremos previamente, y te compensaremos con un 50% de descuento en tu presupuesto final.
             li.slb-list_faq_li.pregunta_9
               span.consulta id="_4" 9. Mi equipo necesita un upgrade. ¿Puedo solamente comprar las piezas o repuestos que necesito?
               p
@@ -182,7 +197,7 @@ html lang="es"
             i.slbicon_instagram
             span.slb-social_menu_span Instagram
         li.slb-social_menu_li
-          a.slb-social_menu_a href="#"
+          a.slb-social_menu_a.cg-pop_trigger id="slb-garantia_hrs"
             i.slbicon_guarantee
             span.slb-social_menu_span Garantía
     /! SECTIONS
@@ -251,7 +266,7 @@ html lang="es"
               | Todos hemos pasado algún susto con nuestro MAC. 
               br
               br
-              | No te preocupes, si tu equipo está con problemas nosotros nos hacemos cargo. Solucionamos el problema y tendrás de vuelta tu equipo en un máximo de 48 horas. Empieza tu atención a través de nuestros números de contacto o, si tienes dudas, escríbenos acá.
+              | No te preocupes, si tu equipo está con problemas nosotros nos hacemos cargo. Solucionamos el problema y tendrás de vuelta tu equipo en un máximo de 72 horas. Empieza tu atención a través de nuestros números de contacto o, si tienes dudas, escríbenos acá.
             form.slb-section_contact_form name='formulario' id='formulario' method='post' action='enviar.php' target='_self' enctype="multipart/form-data"
               input type="text" placeholder="Tu nombre"
               input type="text" placeholder="E-mail"

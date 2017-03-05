@@ -875,6 +875,8 @@ button.slb-section_index_btn
   width: auto;
   padding: 1rem 0.5rem 1rem 0.5rem;
   cursor: pointer;
+  vertical-align: middle;
+  line-height: auto;
   margin-top: 2rem;
   @include animate;
   @include mac_radius;
@@ -1566,7 +1568,32 @@ form.slb-section_contact_form
   }
 }
 
+p.slb-pop_p
+{
+  font-size: 0.7rem;
+  font-family: "sf-ui_light", sans-serif!important;
+  color: $black;
+  text-align: justify;
+  display: block;
+  padding: 1rem 1rem 0rem 1rem;
+  @media #{$sm}
+  {
+    font-size: 0.6rem;
+  }
+}
 
+img.slb-pop_img_tec 
+{
+  width: 15rem;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  @media #{$sm}
+  {
+    width: 7rem;
+  }
+}
 
 .cg-wrap_btns
 {

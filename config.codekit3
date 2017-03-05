@@ -16,7 +16,7 @@
 		"oF": 0
 		},
 	"\/config.rb": {
-		"ft": 131072,
+		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -731,7 +731,7 @@
 		"oAP": "\/index.html",
 		"oF": 0,
 		"oFM": 0,
-		"oS": 1,
+		"oS": 0,
 		"rAC": 0
 		},
 	"\/js\/jquery-3.1.1-min.js": {
@@ -817,19 +817,6 @@
 		"oAP": "\/css\/styles.css",
 		"oF": 1,
 		"oS": 3,
-		"uL": 1
-		},
-	"\/scss\/styles_m.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/styles_m.css",
-		"oF": 0,
-		"oS": 0,
 		"uL": 1
 		}
 	},
