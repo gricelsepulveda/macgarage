@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon/icomoon.eot?dnchmq');
-  src:  url('../fonts/icomoon/icomoon.eot?dnchmq#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon/icomoon.ttf?dnchmq') format('truetype'),
-    url('../fonts/icomoon/icomoon.woff?dnchmq') format('woff'),
-    url('../fonts/icomoon/icomoon.svg?dnchmq#icomoon') format('svg');
+  src:  url('../fonts/icomoon/icomoon.eot?6ypnyo');
+  src:  url('../fonts/icomoon/icomoon.eot?6ypnyo#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon/icomoon.ttf?6ypnyo') format('truetype'),
+    url('../fonts/icomoon/icomoon.woff?6ypnyo') format('woff'),
+    url('../fonts/icomoon/icomoon.svg?6ypnyo#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -53,4 +53,7 @@
 }
 .slbicon_close:before {
   content: "\e909";
+}
+.slbicon_lyrics:before {
+  content: "\e90a";
 }

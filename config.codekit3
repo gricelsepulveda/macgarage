@@ -16,7 +16,7 @@
 		"oF": 0
 		},
 	"\/config.rb": {
-		"ft": 8192,
+		"ft": 131072,
 		"oA": 0,
 		"oAP": "\/config.rb",
 		"oF": 0
@@ -157,32 +157,10 @@
 		"oAP": "\/fonts\/fontawesome\/FontAwesome.otf",
 		"oF": 0
 		},
-	"\/fonts\/icomoon\/icomoon.eot": {
+	"\/fonts\/icomoon.zip": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/fonts\/icomoon\/icomoon.eot",
-		"oF": 0
-		},
-	"\/fonts\/icomoon\/icomoon.svg": {
-		"ft": 2097152,
-		"miP": 0,
-		"oA": 2,
-		"oAP": "\/fonts\/icomoon\/icomoon.svg",
-		"oF": 0,
-		"opt": 0,
-		"plM": 3758088159,
-		"prP": 0
-		},
-	"\/fonts\/icomoon\/icomoon.ttf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/icomoon\/icomoon.ttf",
-		"oF": 0
-		},
-	"\/fonts\/icomoon\/icomoon.woff": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/fonts\/icomoon\/icomoon.woff",
+		"oAP": "\/fonts\/icomoon.zip",
 		"oF": 0
 		},
 	"\/fonts\/sf_ui\/sf-ui_black.eot": {

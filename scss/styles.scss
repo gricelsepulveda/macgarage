@@ -654,7 +654,7 @@ ul.slb-social_menu_ul
   border-radius: 0rem 0.25rem 0.25rem 0rem;
   flex-wrap: wrap;
   width: 2.5rem;
-  height: 7.5rem;
+  height: 10rem;
   position: fixed;
   top: 8rem;
   left: 0;
@@ -889,6 +889,7 @@ button.slb-section_index_btn
 section.slb-section_ourteam 
 {
   @include flex_column;
+  background-color: $gray;
 }
 
 header.slb-section_ourteam_banner
@@ -903,6 +904,7 @@ header.slb-section_ourteam_banner
   }
   height: 75%;
   width: 100vw;
+  margin-top: -1rem;
   img 
   {
     display: block;
